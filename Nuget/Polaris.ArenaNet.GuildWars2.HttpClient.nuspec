@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <version>1.0.0.0</version>
+    <authors>Polaris Community</authors>
+    <owners>Polaris Community</owners>
+    <licenseUrl>http://polaris.codeplex.com/license</licenseUrl>
+    <projectUrl>http://polaris.codeplex.com/</projectUrl>
+    <dependencies>
+      <dependency id="Microsoft.Bcl" version="1.0.19" />
+      <dependency id="Microsoft.Bcl.Async" version="1.0.16" />
+      <dependency id="Microsoft.Bcl.Build" version="1.0.10" />
+    </dependencies>
+    <id>Polaris.ArenaNet.GuildWars2.HttpClient</id>
+    <title>Polaris - ArenaNet GuildWars 2 - HttpClient</title>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Default HTTP Client for wrapper libraries that provide high-level access to the Guild Wars 2 API  ( http://wiki.guildwars2.com/wiki/API ). </description>
+    <summary>
+      The package Polaris.ArenaNet.GuildWars2 for the wrapper libraries that provide high-level access to the Guild Wars 2 API  ( http://wiki.guildwars2.com/wiki/API ) requires a library
+      for making HTTP Requests. This library  provides a supported Http Client.
+    </summary>
+    <releaseNotes>Alpha release</releaseNotes>
+    <copyright>MS-PL</copyright>
+    <language>en-US</language>
+    <tags>wpf silverlight toolkit framework polaris interface ui prism guild wars gw</tags>
+  </metadata>
+  <files>
+    <file src="..\ArenaNet.GuildWars2.Infrastructure\Bin\Nuget\ArenaNet.GuildWars2.Infrastructure.dll" target="lib\portable-net40+sl4+wp7+win8" />
+    <file src="..\ArenaNet.GuildWars2.HttpClient\Bin\Nuget\ArenaNet.GuildWars2.HttpClient.dll" target="lib\portable-net40+sl4+wp7+win8" />
+  </files>
+</package>

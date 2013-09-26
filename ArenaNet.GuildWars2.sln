@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArenaNet.GuildWars2", "ArenaNet.GuildWars2\ArenaNet.GuildWars2.csproj", "{22B07B97-9EB8-4F1A-A0B9-5BDB87FB702E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArenaNet.GuildWars2.HttpClient", "ArenaNet.GuildWars2.HttpClient\ArenaNet.GuildWars2.HttpClient.csproj", "{58B4BFA4-84E7-4DA0-9AA7-3FECC77AAA34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArenaNet.GuildWars2.Infrastructure", "ArenaNet.GuildWars2.Infrastructure\ArenaNet.GuildWars2.Infrastructure.csproj", "{86DE305B-8E33-4CA8-B1B5-B886ADE1004C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArenaNet.GuildWars2.Json", "ArenaNet.GuildWars2.Json\ArenaNet.GuildWars2.Json.csproj", "{4860E18F-354E-4429-8224-B8A5D3836384}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuget", "Nuget", "{293F427D-4A0B-4B47-9157-2CB7BCD1C397}"
+	ProjectSection(SolutionItems) = preProject
+		Nuget\Polaris.ArenaNet.GuildWars2.HttpClient.nuspec = Nuget\Polaris.ArenaNet.GuildWars2.HttpClient.nuspec
+		Nuget\Polaris.ArenaNet.GuildWars2.Json.nuspec = Nuget\Polaris.ArenaNet.GuildWars2.Json.nuspec
+		Nuget\Polaris.ArenaNet.GuildWars2.nuspec = Nuget\Polaris.ArenaNet.GuildWars2.nuspec
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{1518A484-0B4B-4207-B1CE-1EA81D7BA649}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CrashTest|Any CPU = CrashTest|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Nuget|Any CPU = Nuget|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22B07B97-9EB8-4F1A-A0B9-5BDB87FB702E}.CrashTest|Any CPU.ActiveCfg = CrashTest|Any CPU
+		{22B07B97-9EB8-4F1A-A0B9-5BDB87FB702E}.CrashTest|Any CPU.Build.0 = CrashTest|Any CPU
+		{22B07B97-9EB8-4F1A-A0B9-5BDB87FB702E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22B07B97-9EB8-4F1A-A0B9-5BDB87FB702E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22B07B97-9EB8-4F1A-A0B9-5BDB87FB702E}.Nuget|Any CPU.ActiveCfg = Nuget|Any CPU
+		{22B07B97-9EB8-4F1A-A0B9-5BDB87FB702E}.Nuget|Any CPU.Build.0 = Nuget|Any CPU
+		{22B07B97-9EB8-4F1A-A0B9-5BDB87FB702E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22B07B97-9EB8-4F1A-A0B9-5BDB87FB702E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58B4BFA4-84E7-4DA0-9AA7-3FECC77AAA34}.CrashTest|Any CPU.ActiveCfg = CrashTest|Any CPU
+		{58B4BFA4-84E7-4DA0-9AA7-3FECC77AAA34}.CrashTest|Any CPU.Build.0 = CrashTest|Any CPU
+		{58B4BFA4-84E7-4DA0-9AA7-3FECC77AAA34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58B4BFA4-84E7-4DA0-9AA7-3FECC77AAA34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58B4BFA4-84E7-4DA0-9AA7-3FECC77AAA34}.Nuget|Any CPU.ActiveCfg = Nuget|Any CPU
+		{58B4BFA4-84E7-4DA0-9AA7-3FECC77AAA34}.Nuget|Any CPU.Build.0 = Nuget|Any CPU
+		{58B4BFA4-84E7-4DA0-9AA7-3FECC77AAA34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58B4BFA4-84E7-4DA0-9AA7-3FECC77AAA34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86DE305B-8E33-4CA8-B1B5-B886ADE1004C}.CrashTest|Any CPU.ActiveCfg = CrashTest|Any CPU
+		{86DE305B-8E33-4CA8-B1B5-B886ADE1004C}.CrashTest|Any CPU.Build.0 = CrashTest|Any CPU
+		{86DE305B-8E33-4CA8-B1B5-B886ADE1004C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86DE305B-8E33-4CA8-B1B5-B886ADE1004C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86DE305B-8E33-4CA8-B1B5-B886ADE1004C}.Nuget|Any CPU.ActiveCfg = Nuget|Any CPU
+		{86DE305B-8E33-4CA8-B1B5-B886ADE1004C}.Nuget|Any CPU.Build.0 = Nuget|Any CPU
+		{86DE305B-8E33-4CA8-B1B5-B886ADE1004C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86DE305B-8E33-4CA8-B1B5-B886ADE1004C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4860E18F-354E-4429-8224-B8A5D3836384}.CrashTest|Any CPU.ActiveCfg = CrashTest|Any CPU
+		{4860E18F-354E-4429-8224-B8A5D3836384}.CrashTest|Any CPU.Build.0 = CrashTest|Any CPU
+		{4860E18F-354E-4429-8224-B8A5D3836384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4860E18F-354E-4429-8224-B8A5D3836384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4860E18F-354E-4429-8224-B8A5D3836384}.Nuget|Any CPU.ActiveCfg = Nuget|Any CPU
+		{4860E18F-354E-4429-8224-B8A5D3836384}.Nuget|Any CPU.Build.0 = Nuget|Any CPU
+		{4860E18F-354E-4429-8224-B8A5D3836384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4860E18F-354E-4429-8224-B8A5D3836384}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

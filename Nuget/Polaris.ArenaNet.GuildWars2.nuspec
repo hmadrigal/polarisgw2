@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <version>1.0.0.0</version>
+    <authors>Polaris Community</authors>
+    <owners>Polaris Community</owners>
+    <licenseUrl>http://polaris.codeplex.com/license</licenseUrl>
+    <projectUrl>http://polaris.codeplex.com/</projectUrl>
+    <id>Polaris.ArenaNet.GuildWars2</id>
+    <title>Polaris - ArenaNet GuildWars 2</title>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Wrapper libraries that provide high-level access to the Guild Wars 2 API  ( http://wiki.guildwars2.com/wiki/API ). </description>
+    <summary>
+      Wrapper libraries that provide high-level access to the Guild Wars 2 API  ( http://wiki.guildwars2.com/wiki/API ).
+      This library allows provide your custom Http Client as well as your custom JSON derializer.
+      Moreover everything backed on interfaces, thus it shouldbe easy to mock thru a dependency injection.
+    </summary>
+    <releaseNotes>Alpha release</releaseNotes>
+    <copyright>MS-PL</copyright>
+    <language>en-US</language>
+    <tags>wpf silverlight toolkit framework polaris interface ui prism guild wars gw</tags>
+  </metadata>
+  <files>
+    <file src="..\ArenaNet.GuildWars2.Infrastructure\Bin\Nuget\ArenaNet.GuildWars2.Infrastructure.dll" target="lib\portable-net40+sl4+wp7+win8" />
+    <file src="..\ArenaNet.GuildWars2\Bin\Nuget\ArenaNet.GuildWars2.dll" target="lib\portable-net40+sl4+wp7+win8" />
+  </files>
+</package>

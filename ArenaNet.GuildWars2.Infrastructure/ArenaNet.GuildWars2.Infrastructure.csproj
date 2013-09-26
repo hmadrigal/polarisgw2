@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{86DE305B-8E33-4CA8-B1B5-B886ADE1004C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArenaNet.GuildWars2</RootNamespace>
+    <AssemblyName>ArenaNet.GuildWars2.Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile104</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'CrashTest|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\CrashTest\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\ArenaNet.GuildWars2.Infrastructure.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Nuget|AnyCPU'">
+    <OutputPath>bin\Nuget\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GuildWars2ApiException.cs" />
+    <Compile Include="IGw2WebClient.cs" />
+    <Compile Include="IGw2HttpClient.cs" />
+    <Compile Include="IGw2JsonDeserializer.cs" />
+    <Compile Include="Models\IBuild.cs" />
+    <Compile Include="Models\ICloth.cs" />
+    <Compile Include="Models\IColorDescriptions.cs" />
+    <Compile Include="Models\IColors.cs" />
+    <Compile Include="Models\IContinent.cs" />
+    <Compile Include="Models\IContinentDescriptions.cs" />
+    <Compile Include="Models\IDiscoveredItems.cs" />
+    <Compile Include="Models\IDiscoveredRecipes.cs" />
+    <Compile Include="Models\IDynamicEvents.cs" />
+    <Compile Include="Models\IEmblem.cs" />
+    <Compile Include="Models\IEvent.cs" />
+    <Compile Include="Models\IEventDescriptions.cs" />
+    <Compile Include="Models\IEventDetail.cs" />
+    <Compile Include="Models\IEventName.cs" />
+    <Compile Include="Models\IGuild.cs" />
+    <Compile Include="Models\IInfixUpgrade.cs" />
+    <Compile Include="Models\IIngredient.cs" />
+    <Compile Include="Models\IItemDetails.cs" />
+    <Compile Include="Models\ILeather.cs" />
+    <Compile Include="Models\ILocation.cs" />
+    <Compile Include="Models\IMap.cs" />
+    <Compile Include="Models\IMapDescriptions.cs" />
+    <Compile Include="Models\IMapDetails.cs" />
+    <Compile Include="Models\IMapFloor.cs" />
+    <Compile Include="Models\IMapRegionDetails.cs" />
+    <Compile Include="Models\IMetal.cs" />
+    <Compile Include="Models\IObjectiveName.cs" />
+    <Compile Include="Models\IPointsOfInterest.cs" />
+    <Compile Include="Models\IRecipeDetails.cs" />
+    <Compile Include="Models\IRegion.cs" />
+    <Compile Include="Models\ISector.cs" />
+    <Compile Include="Models\ISkillChallenge.cs" />
+    <Compile Include="Models\ITask.cs" />
+    <Compile Include="Models\IWeapon.cs" />
+    <Compile Include="Models\IWeaponAttribute.cs" />
+    <Compile Include="Models\IWorld.cs" />
+    <Compile Include="Models\IWorldVsWorldMap.cs" />
+    <Compile Include="Models\IWorldVsWorldMatch.cs" />
+    <Compile Include="Models\IWorldVsWorldMatchDetails.cs" />
+    <Compile Include="Models\IWorldVsWorldMatches.cs" />
+    <Compile Include="Models\IWorldVsWorldObjective.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyVersion.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Runtime">
+      <HintPath>..\packages\Microsoft.Bcl.1.0.19\lib\portable-net40+sl4+win8+wp71\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>..\packages\Microsoft.Bcl.1.0.19\lib\portable-net40+sl4+win8+wp71\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.10\tools\Microsoft.Bcl.Build.targets" />
+  <Import Project="..\packages\Polaris.Build.1.0.32872.5337\tools\Polaris.Build.CSharp.targets" Condition=" '$(Configuration)' == 'Nuget' " />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <!--<Target Name="NugetUpdateTask">
+    <Exec Command="attrib -r $(SolutionDir)\ArenaNet.GuildWars2.Infrastructure\Properties\AssemblyVersion.cs" />
+    <SetTimeBaseAssemblyVersion AssemblyInfoFilepath="$(SolutionDir)\ArenaNet.GuildWars2.Infrastructure\Properties\AssemblyVersion.cs" UpdateAssemblyInfoFile="True">
+      <Output TaskParameter="AssemblyVersion" PropertyName="AssemblyVersionPolarisCommon" />
+      <Output TaskParameter="AssemblyVersionMajor" PropertyName="AssemblyVersionMajorPolarisCommon" />
+      <Output TaskParameter="AssemblyVersionMinor" PropertyName="AssemblyVersionMinorPolarisCommon" />
+      <Output TaskParameter="AssemblyVersionBuild" PropertyName="AssemblyVersionBuildPolarisCommon" />
+      <Output TaskParameter="AssemblyVersionRevision" PropertyName="AssemblyVersionRevisionPolarisCommon" />
+    </SetTimeBaseAssemblyVersion>
+    
+  </Target>
+  <Target Name="BeforeBuild">
+    <CallTarget Condition="'$(Configuration)' == 'Nuget'" Targets="NugetUpdateTask">
+    </CallTarget>
+  </Target>-->
+</Project>
