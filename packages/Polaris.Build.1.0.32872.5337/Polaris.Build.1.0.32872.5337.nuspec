@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Polaris.Build</id>
+    <version>1.0.32872.5337</version>
+    <title>Polaris - MsBuild Tasks</title>
+    <authors>Polaris Community</authors>
+    <owners>Polaris Community</owners>
+    <licenseUrl>http://polaris.codeplex.com/license</licenseUrl>
+    <projectUrl>http://polaris.codeplex.com/</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>MS Build tasks for not so common needs.</description>
+    <summary>The Polaris Build holds files for inline csharp-based tasks for MSbuild process.</summary>
+    <releaseNotes>Alpha release</releaseNotes>
+    <copyright>MS-PL</copyright>
+    <language>en-US</language>
+    <tags>polaris csharp msbuild build</tags>
+  </metadata>
+</package>
