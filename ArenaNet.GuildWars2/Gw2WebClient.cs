@@ -22,10 +22,36 @@
         {
             using (var stream = await _httpClient.GetStreamAsync(uri))
             {
-                var instanceOfT = _jsonDeserializer.Deserialize<T>(stream);
+                var instanceOfT = (T)_jsonDeserializer.Deserialize(stream, typeof(T) );
                 return instanceOfT;
             }
         }
+
+        protected virtual async System.Threading.Tasks.Task<object> GetJsonFromUri(System.Uri uri, System.Type targetType)
+        {
+            using (var stream = await _httpClient.GetStreamAsync(uri))
+            {
+                var instanceOfT = _jsonDeserializer.Deserialize(stream, targetType);
+                return instanceOfT;
+            }
+        }
+
+        protected IEnumerable<T> GetEnumerable<T>(object instance)
+        {
+            IEnumerable<T> collection = instance as IEnumerable<T>;
+            if (collection != null)
+            {
+                return collection;
+            }
+            if (instance is System.Collections.IEnumerable)
+            {
+                var enumerable = (instance is System.Collections.IEnumerable);
+                collection = (instance as System.Collections.IEnumerable).OfType<T>();
+            }
+            return collection;
+        }
+
+        
 
         #region CRASH TEST CODE
 #if CRASH_TEST

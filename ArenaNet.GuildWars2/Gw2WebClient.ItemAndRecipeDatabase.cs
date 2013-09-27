@@ -15,7 +15,7 @@
 #endif
             try
             {
-                var result = await GetJsonFromUri<DiscoveredItems>(uri);
+                var result = await GetJsonFromUri<IDiscoveredItems>(uri);
                 return result;
             }
             catch (System.Net.WebException innerException)
@@ -33,7 +33,7 @@
 #endif
             try
             {
-                var result = await GetJsonFromUri<ItemDetails>(uri);
+                var result = await GetJsonFromUri<IItemDetails>(uri);
                 return result;
             }
             catch (System.Net.WebException innerException)
@@ -68,7 +68,7 @@
 #endif
             try
             {
-                var result = await GetJsonFromUri<RecipeDetails>(uri);
+                var result = await GetJsonFromUri<IRecipeDetails>(uri);
                 return result;
             }
             catch (System.Net.WebException innerException)

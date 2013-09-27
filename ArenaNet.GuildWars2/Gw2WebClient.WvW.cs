@@ -16,7 +16,7 @@
 #endif
             try
             {
-                var result = await GetJsonFromUri<WorldVsWorldMatches>(uri);
+                var result = await GetJsonFromUri<IWorldVsWorldMatches>(uri);
                 return result;
             }
             catch (System.Net.WebException innerException)
@@ -33,7 +33,7 @@
 #endif
             try
             {
-                var result = await GetJsonFromUri<WorldVsWorldMatchDetails>(uri);
+                var result = await GetJsonFromUri<IWorldVsWorldMatchDetails>(uri);
                 return result;
             }
             catch (System.Net.WebException innerException)
@@ -51,7 +51,8 @@
 #endif
             try
             {
-                var result = (await GetJsonFromUri<List<ObjectiveName>>(uri)).OfType<IObjectiveName>();
+                var instance = (await GetJsonFromUri(uri, typeof(List<IObjectiveName>)));
+                var result = GetEnumerable<IObjectiveName>(instance);
                 return result;
             }
             catch (System.Net.WebException innerException)

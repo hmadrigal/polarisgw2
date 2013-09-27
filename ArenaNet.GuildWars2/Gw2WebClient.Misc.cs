@@ -16,7 +16,7 @@
 #endif
             try
             {
-                var result = await GetJsonFromUri<ColorDescriptions>(uri);
+                var result = await GetJsonFromUri<IColorDescriptions>(uri);
                 return result;
             }
             catch (System.Net.WebException innerException)
@@ -33,7 +33,7 @@
 #endif
             try
             {
-                var result = await GetJsonFromUri<Build>(uri);
+                var result = await GetJsonFromUri<IBuild>(uri);
                 return result;
             }
             catch (System.Net.WebException innerException)

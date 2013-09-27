@@ -32,7 +32,7 @@
 #endif
             try
             {
-                var result = await GetJsonFromUri<DynamicEvents>(uri);
+                var result = await GetJsonFromUri<IDynamicEvents>(uri);
                 return result;
             }
             catch (System.Net.WebException innerException)
@@ -52,7 +52,8 @@
 
             try
             {
-                var result = (await GetJsonFromUri<List<World>>(uri)).OfType<IWorld>();
+                var instance = (await GetJsonFromUri(uri, typeof(List<IWorld>)));
+                var result = GetEnumerable<IWorld>(instance);
                 return result;
             }
             catch (System.Net.WebException innerException)
@@ -70,7 +71,8 @@
 #endif
             try
             {
-                var result = (await GetJsonFromUri<List<Map>>(uri)).OfType<IMap>();
+                var instance = (await GetJsonFromUri(uri, typeof(List<IMap>)));
+                var result = GetEnumerable<IMap>(instance);
                 return result;
             }
             catch (System.Net.WebException innerException)
@@ -89,7 +91,8 @@
 #endif
             try
             {
-                var result = (await GetJsonFromUri<List<EventName>>(uri)).OfType<IEventName>();
+                var instance = (await GetJsonFromUri(uri, typeof(List<IEventName>)));
+                var result = GetEnumerable<IEventName>(instance);
                 return result;
             }
             catch (System.Net.WebException innerException)
@@ -111,7 +114,7 @@
 #endif
             try
             {
-                var result = await GetJsonFromUri<EventDescriptions>(uri);
+                var result = await GetJsonFromUri<IEventDescriptions>(uri);
                 return result;
             }
             catch (System.Net.WebException innerException)

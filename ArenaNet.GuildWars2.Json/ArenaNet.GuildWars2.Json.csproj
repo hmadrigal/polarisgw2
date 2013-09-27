@@ -65,7 +65,49 @@
     <Compile Include="..\ArenaNet.GuildWars2.Infrastructure\Properties\AssemblyVersion.cs">
       <Link>Properties\AssemblyVersion.cs</Link>
     </Compile>
+    <Compile Include="GenericJsonConverter.cs" />
     <Compile Include="Gw2JsonDeserializer.cs" />
+    <Compile Include="Models\Build.cs" />
+    <Compile Include="Models\Cloth.cs" />
+    <Compile Include="Models\ColorDescriptions.cs" />
+    <Compile Include="Models\Colors.cs" />
+    <Compile Include="Models\Continent.cs" />
+    <Compile Include="Models\ContinentDescriptions.cs" />
+    <Compile Include="Models\DiscoveredItems.cs" />
+    <Compile Include="Models\DiscoveredRecipes.cs" />
+    <Compile Include="Models\DynamicEvents.cs" />
+    <Compile Include="Models\Emblem.cs" />
+    <Compile Include="Models\Event.cs" />
+    <Compile Include="Models\EventDescriptions.cs" />
+    <Compile Include="Models\EventDetail.cs" />
+    <Compile Include="Models\EventName.cs" />
+    <Compile Include="Models\Guild.cs" />
+    <Compile Include="Models\InfixUpgrade.cs" />
+    <Compile Include="Models\Ingredient.cs" />
+    <Compile Include="Models\ItemDetails.cs" />
+    <Compile Include="Models\Leather.cs" />
+    <Compile Include="Models\Location.cs" />
+    <Compile Include="Models\Map.cs" />
+    <Compile Include="Models\MapDescriptions.cs" />
+    <Compile Include="Models\MapDetails.cs" />
+    <Compile Include="Models\MapFloor.cs" />
+    <Compile Include="Models\MapRegionDetails.cs" />
+    <Compile Include="Models\Metal.cs" />
+    <Compile Include="Models\ObjectiveName.cs" />
+    <Compile Include="Models\PointsOfInterest.cs" />
+    <Compile Include="Models\RecipeDetails.cs" />
+    <Compile Include="Models\Region.cs" />
+    <Compile Include="Models\Sector.cs" />
+    <Compile Include="Models\SkillChallenge.cs" />
+    <Compile Include="Models\Task.cs" />
+    <Compile Include="Models\Weapon.cs" />
+    <Compile Include="Models\WeaponAttribute.cs" />
+    <Compile Include="Models\World.cs" />
+    <Compile Include="Models\WorldVsWorldMap.cs" />
+    <Compile Include="Models\WorldVsWorldMatch.cs" />
+    <Compile Include="Models\WorldVsWorldMatchDetails.cs" />
+    <Compile Include="Models\WorldVsWorldMatches.cs" />
+    <Compile Include="Models\WorldVsWorldObjective.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

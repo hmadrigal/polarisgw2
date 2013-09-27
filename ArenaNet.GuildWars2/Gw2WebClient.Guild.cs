@@ -29,7 +29,7 @@
 #endif
             try
             {
-                var result = await GetJsonFromUri<Guild>(uri);
+                var result = await GetJsonFromUri<IGuild>(uri);
                 return result;
             }
             catch (System.Net.WebException innerException)

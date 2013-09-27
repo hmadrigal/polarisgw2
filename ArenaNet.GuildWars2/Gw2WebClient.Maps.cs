@@ -16,7 +16,7 @@
 #endif
             try
             {
-                var result = await GetJsonFromUri<ContinentDescriptions>(uri);
+                var result = await GetJsonFromUri<IContinentDescriptions>(uri);
                 return result;
             }
             catch (System.Net.WebException innerException)
@@ -38,7 +38,7 @@
 #endif
             try
             {
-                var result = await GetJsonFromUri<MapDescriptions>(uri);
+                var result = await GetJsonFromUri<IMapDescriptions>(uri);
                 return result;
             }
             catch (System.Net.WebException innerException)
@@ -56,7 +56,7 @@
 #endif
             try
             {
-                var result = await GetJsonFromUri<MapFloor>(uri);
+                var result = await GetJsonFromUri<IMapFloor>(uri);
                 return result;
             }
             catch (System.Net.WebException innerException)
