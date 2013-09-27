@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Polaris.Common</name>
+    </assembly>
+    <members>
+        <member name="M:Polaris.Extensions.CommandExtensions.TryExecute(System.Windows.Input.ICommand,System.Object)">
+            <summary>
+            Tries to execute the command. The command won't be executed if it's null or if the CanExecution function returns null
+            </summary>
+            <param name="command"></param>
+            <param name="parameter"></param>
+        </member>
+        <member name="M:Polaris.Extensions.NumericExtensions.Clamp``1(``0,``0,``0)">
+            <summary>
+            Limits the value to the specified range as long as the type is IComparable.
+            </summary>
+            <typeparam name="T">An IComparable type.</typeparam>
+            <param name="target"></param>
+            <param name="min"></param>
+            <param name="max"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
