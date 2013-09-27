@@ -120,7 +120,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.10\tools\Microsoft.Bcl.Build.targets" />
-  <Import Project="..\packages\Polaris.Build.1.0.32872.5337\tools\Polaris.Build.CSharp.targets" Condition=" '$(Configuration)' == 'Nuget' " />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -128,19 +127,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <!--<Target Name="NugetUpdateTask">
-    <Exec Command="attrib -r $(SolutionDir)\ArenaNet.GuildWars2.Infrastructure\Properties\AssemblyVersion.cs" />
-    <SetTimeBaseAssemblyVersion AssemblyInfoFilepath="$(SolutionDir)\ArenaNet.GuildWars2.Infrastructure\Properties\AssemblyVersion.cs" UpdateAssemblyInfoFile="True">
-      <Output TaskParameter="AssemblyVersion" PropertyName="AssemblyVersionPolarisCommon" />
-      <Output TaskParameter="AssemblyVersionMajor" PropertyName="AssemblyVersionMajorPolarisCommon" />
-      <Output TaskParameter="AssemblyVersionMinor" PropertyName="AssemblyVersionMinorPolarisCommon" />
-      <Output TaskParameter="AssemblyVersionBuild" PropertyName="AssemblyVersionBuildPolarisCommon" />
-      <Output TaskParameter="AssemblyVersionRevision" PropertyName="AssemblyVersionRevisionPolarisCommon" />
-    </SetTimeBaseAssemblyVersion>
-    
-  </Target>
-  <Target Name="BeforeBuild">
-    <CallTarget Condition="'$(Configuration)' == 'Nuget'" Targets="NugetUpdateTask">
-    </CallTarget>
-  </Target>-->
 </Project>

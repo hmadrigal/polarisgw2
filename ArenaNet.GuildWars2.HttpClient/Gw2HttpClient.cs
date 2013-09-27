@@ -13,9 +13,14 @@ namespace ArenaNet.GuildWars2
         public async Task<Stream> GetStreamAsync(Uri uri)
         {
             var webRequest = WebRequest.CreateHttp(uri);
-            // NOTE: Even though WebResponse is IDisposable, on Desktop/Store apps it will return a disposed stream if disposed into this method. On Phone it can be disposed and the code still working well
             var webResponse = await Task<WebResponse>.Factory.FromAsync(webRequest.BeginGetResponse, webRequest.EndGetResponse, TaskCreationOptions.None);
-            return webResponse.GetResponseStream();
+            var stream = webResponse.GetResponseStream();
+            // NOTE: If the Stream Is System.Net.ConnectStream then owner disposal will also dispose the stream 
+            if (stream.GetType().FullName != @"System.Net.ConnectStream")
+            {
+                webResponse.Dispose();
+            }
+            return stream;
         }
 
         private void InitializeHttpClient()

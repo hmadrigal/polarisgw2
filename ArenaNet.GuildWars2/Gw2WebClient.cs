@@ -2,7 +2,6 @@
 {
     using UriParameter = System.Collections.Generic.KeyValuePair<string, object>;
     using System.Collections.Generic;
-    using Polaris.Services;
     using System.Linq;
 
     public partial class Gw2WebClient : IGw2WebClient
