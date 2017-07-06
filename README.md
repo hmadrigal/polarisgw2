@@ -1,4 +1,6 @@
-# Polaris ArenaNet GuildWars 2
+## Polaris ArenaNet GuildWars 2
+Please notice this project is not anymore on development. Few time after we published our API wrapper for C#, ArenaNet decided to update their API for GW2, the updated API has breaking changes and we simply decided not to restart the development. 
+This project is just a reference for the API client we implemented at that time.
 
 ## Project Description
 This project provides wrapper libraries that provide high-level access to the Guild Wars 2 API
@@ -22,18 +24,22 @@ http://apps.microsoft.com/windows/app/kumquat/8a692da9-1635-4dcf-ad54-e467259fb5
 
 ## Windows Phone
 http://www.windowsphone.com/s?appid=c4cf5870-0686-4980-b7b7-84f6f2c5d8c1
-How to use it?
+
+## How to use it?
 
 Simple get the nuget packages, for example using the PowerShell console:
 
-PM> Install-Package Polaris.ArenaNet.GuildWars2.HttpClient 
-PM> Install-Package Polaris.ArenaNet.GuildWars2.Json 
-PM> Install-Package Polaris.ArenaNet.GuildWars2 
+`PM> Install-Package Polaris.ArenaNet.GuildWars2.HttpClient`
+
+`PM> Install-Package Polaris.ArenaNet.GuildWars2.Json`
+
+`PM> Install-Package Polaris.ArenaNet.GuildWars2`
 
 Then you could do the following:
 
-var gw2WebClient = new ArenaNet.GuildWars2.Gw2WebClient(ArenaNet.GuildWars2.Gw2HttpClient.Instance, ArenaNet.GuildWars2.Gw2JsonDeserializer.Instance);
-var worlds = await gw2WebClient.GetWorlds("en");
+`var gw2WebClient = new ArenaNet.GuildWars2.Gw2WebClient(ArenaNet.GuildWars2.Gw2HttpClient.Instance, ArenaNet.GuildWars2.Gw2JsonDeserializer.Instance);`
+`var worlds = await gw2WebClient.GetWorlds("en");`
+
 
 Simple, right? That's the idea.
 Best of lucks!
